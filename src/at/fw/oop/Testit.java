@@ -26,13 +26,19 @@ public class Testit {
         katze.setName("Heinz");
 
         //System.out.println("Meine Katze "+katze.getName() + " ist " + katze.getAlter() + " alt!");
+Haus haus = new Haus(350,"Buxdehude4, 88732 Hamburg", 8,5);
+haus.getInfo();
+haus.addKatze(katze);
+haus.getKatzenImHaus();
+
 
         for(Katze k : mKatzenliste){
             System.out.println("Meine Katze "+k.getName() + " ist " + k.getAlter() + " und ist " + k.getOberflächenbeschaffenheit() + ". " + "Meine Katze ist " + k.getFarbe() + ".");
 
-
+            haus.addKatze(k);
 
 
         }
+        haus.getKatzenImHaus();
     }
 }
